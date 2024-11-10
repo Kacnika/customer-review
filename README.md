@@ -1,6 +1,5 @@
+{ "entities": [
 {
-  "entities": [
-    {
       "entity_name": "<entity name>",
       "entity_type": "<entity type>",
       "entity_sentiment": "<entity sentiment>",
@@ -9,6 +8,7 @@
     }
   ]
 }
+
 
 Review: "The service was terrible, and the staff was unhelpful. I don't think I'll shop here again."
 
@@ -29,5 +29,6 @@ Review: "The service was terrible, and the staff was unhelpful. I don't think I'
       "followup_reason": "Customer reported unhelpful staff behavior."
     }
   ]
-}
+} 
+
 
