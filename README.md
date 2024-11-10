@@ -1,34 +1,46 @@
-{ "entities": [
-{
-      "entity_name": "<entity name>",
-      "entity_type": "<entity type>",
-      "entity_sentiment": "<entity sentiment>",
-      "followup": "<Y or N for follow-up>",
-      "followup_reason": "<reason for follow-up>"
-    }
-  ]
-}
+##Example Review 1:
+"The product quality was terrible and the delivery was late. I expected better service."
 
 
-Review: "The service was terrible, and the staff was unhelpful. I don't think I'll shop here again."
+##Example Review 2:
+"I love the product! It’s exactly what I was looking for, and the customer support was helpful."
+
+##Example Review 3: "The item arrived broken, and it was a hassle to get a replacement."
 
 {
   "entities": [
     {
-      "entity_name": "service",
-      "entity_type": "aspect",
+      "entity_name": "product quality",
+      "entity_type": "product aspect",
       "entity_sentiment": "NEGATIVE",
       "followup": "Y",
-      "followup_reason": "Customer expressed dissatisfaction with the service quality."
+      "followup_reason": "Poor product quality"
     },
     {
-      "entity_name": "staff",
-      "entity_type": "aspect",
+      "entity_name": "delivery",
+      "entity_type": "service aspect",
       "entity_sentiment": "NEGATIVE",
       "followup": "Y",
-      "followup_reason": "Customer reported unhelpful staff behavior."
+      "followup_reason": "Late delivery"
     }
   ]
-} 
+}
 
-
+{
+  "entities": [
+    {
+      "entity_name": "product",
+      "entity_type": "product aspect",
+      "entity_sentiment": "POSITIVE",
+      "followup": "N",
+      "followup_reason": ""
+    },
+    {
+      "entity_name": "customer support",
+      "entity_type": "service aspect",
+      "entity_sentiment": "POSITIVE",
+      "followup": "N",
+      "followup_reason": ""
+    }
+  ]
+}
