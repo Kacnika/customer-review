@@ -44,3 +44,12 @@
     }
   ]
 }
+from transformers import pipeline
+
+classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
+review_text = "The product quality was terrible and the delivery was late. I expected better service."
+labels = ["POSITIVE", "NEUTRAL", "NEGATIVE"]
+
+result = classifier(review_text, candidate_labels=labels)
+print(result)
+
